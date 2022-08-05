@@ -49,12 +49,11 @@ class _MyHomePageState extends State<MyHomePage> {
               height: height,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Color.fromARGB(255, 222, 104, 14),
+                  primary: const Color.fromARGB(255, 222, 104, 14),
                 ),
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute<void>(
-                    builder: (BuildContext context) =>
-                        FormPage(status: "Stay"),
+                    builder: (BuildContext context) => FormPage(status: "Stay"),
                   ),
                 ),
                 child: const Text(
@@ -68,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: height,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Color.fromARGB(255, 22, 112, 222),
+                  primary: const Color.fromARGB(255, 22, 112, 222),
                 ),
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute<void>(
